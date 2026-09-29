@@ -1,20 +1,4 @@
-# ─── Dependencies ────────────────────────────────────────────────────────────
-node_modules
-.npm
-
-# ─── Build output ────────────────────────────────────────────────────────────
-dist
-dist-ssr
-
-# ─── Environment / Secrets ───────────────────────────────────────────────────
-# NEVER commit .env — it may contain API keys, JWT secrets, database URIs, etc.
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# ─── Logs ────────────────────────────────────────────────────────────────────
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -23,18 +7,30 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-# ─── OS / Editor files ───────────────────────────────────────────────────────
-.DS_Store
-Thumbs.db
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables (may contain secrets/API keys)
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
+.DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# ─── Vite / Temp ─────────────────────────────────────────────────────────────
-*.local
-.cache
+# OS files
+Thumbs.db
+
+# Portable Git (local install)
+PortableGit/
+PortableGit.exe
