@@ -14,7 +14,6 @@
     "test:live": "node test-live-api.mjs"
   },
   "dependencies": {
-    "@rolldown/binding-win32-x64-msvc": "^1.2.11",
     "axios": "^1.20.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.4",
